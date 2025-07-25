@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator" role="application" aria-label="Calculator">
+        <input type="text" id="display" disabled placeholder="Enter" aria-live="polite" aria-label="Calculator display">
+        <div class="buttons" role="group" aria-label="Calculator buttons">
+            <button onclick="clearDisplay()" aria-label="Clear">C</button>
+            <button onclick="appendToDisplay('%')" aria-label="Percent">%</button>
+            <button onclick="deleteLastCharacter()" aria-label="Backspace">⌫</button>
+            <button onclick="appendToDisplay('/')" aria-label="Divide">/</button>
+            <button onclick="appendToDisplay('7')" aria-label="Seven">7</button>
+            <button onclick="appendToDisplay('8')" aria-label="Eight">8</button>
+            <button onclick="appendToDisplay('9')" aria-label="Nine">9</button>
+            <button onclick="appendToDisplay('*')" aria-label="Multiply">*</button>
+            <button onclick="appendToDisplay('4')" aria-label="Four">4</button>
+            <button onclick="appendToDisplay('5')" aria-label="Five">5</button>
+            <button onclick="appendToDisplay('6')" aria-label="Six">6</button>
+            <button onclick="appendToDisplay('+')" aria-label="Add">+</button>
+            <button onclick="appendToDisplay('1')" aria-label="One">1</button>
+            <button onclick="appendToDisplay('2')" aria-label="Two">2</button>
+            <button onclick="appendToDisplay('3')" aria-label="Three">3</button>
+            <button onclick="appendToDisplay('-')" aria-label="Subtract">-</button>
+            <button onclick="appendToDisplay('00')" aria-label="Double zero">00</button>
+            <button onclick="appendToDisplay('0')" aria-label="Zero">0</button>
+            <button onclick="appendToDisplay('.')" aria-label="Decimal point">.</button>
+            <button onclick="calculate()" aria-label="Equals">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
